@@ -138,15 +138,11 @@ entry: {
 }
 ```
 
-Every webpack config object needs have at least an entry section and an output section. Output is where you tell the webapck where to place the bundle created, optionally giving it a name as well. Make sure you add *path* unless you decide to use absolute paths.
-```bash
-yarn add --dev path
-```
-Use path in  *webpack.config.js*
+Every webpack config object needs have at least an entry section and an output section. Output is where you tell the webapck where to place the bundle created, optionally giving it a name as well. In  *webpack.config.js*,
 ```bash
 const path = require('path');
 ```
-Add the output entry to webpack config object in *webpack.config.js*.
+Add the output entry to webpack config object.
 ```json
 output: {
     filename: '[name].bundle.js',
